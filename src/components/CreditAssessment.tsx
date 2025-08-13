@@ -145,12 +145,11 @@ const CreditAssessment = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-start mb-6">
-          <h1 className="text-2xl font-semibold text-dashboard-text-primary">Credit Assessment</h1>
+          <h1 className="text-2xl font-semibold text-gray-800">Credit Assessment</h1>
           <div className="flex items-center gap-4">
             <button className="flex items-center gap-2 px-3 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-50">
               <Printer className="w-4 h-4" />
             </button>
-            
           </div>
         </div>
         
@@ -176,42 +175,42 @@ const CreditAssessment = () => {
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 text-sm">
       <div>
         <span className="text-gray-600">Loan Application Number:</span>
-        <div className="font-medium">BLT00000022</div>
+        <div className="font-semibold text-gray-800">BLT00000022</div>
       </div>
       <div>
         <span className="text-gray-600">Applicant Class:</span>
-        <div className="font-medium">A</div>
+        <div className="font-semibold text-gray-800">A</div>
       </div>
       <div>
         <span className="text-gray-600">Application Status:</span>
-        <div className="font-medium text-red-600">Rejected</div>
+        <div className="font-semibold text-red-600">Rejected</div>
       </div>
       <div>
         <span className="text-gray-600">Final Decision:</span>
-        <div className="font-medium">Not Eligible</div>
+        <div className="font-semibold text-gray-800">Not Eligible</div>
       </div>
       <div>
         <span className="text-gray-600">Application Date:</span>
-        <div className="font-medium">2025-01-14 12:45:10</div>
+        <div className="font-semibold text-gray-800">2025-01-14 12:45:10</div>
       </div>
       <div>
         <span className="text-gray-600">Last Updated:</span>
-        <div className="font-medium">2025-01-14 11:50:00</div>
+        <div className="font-semibold text-gray-800">2025-01-14 11:50:00</div>
       </div>
       <div>
         <span className="text-gray-600">Case Manager:</span>
-        <div className="font-medium">Rana Prakash</div>
+        <div className="font-semibold text-gray-800">Rana Prakash</div>
       </div>
     </div>
 
-    {/* Right: Image + Name */}
+    {/* Right: Profile */}
     <div className="flex flex-col items-center ml-6">
-      <img
-        src="https://img.freepik.com/free-photo/indian-man-smiling-mockup-psd-cheerful-expression-closeup-portra_53876-143269.jpg?semt=ais_hybrid&w=740"
-        alt="Applicant"
-        className="w-28 h-36 object-cover rounded-md shadow"
-      />
-      <span className="text-sm font-medium text-gray-700 mt-2">
+      <div className="w-28 h-36 bg-gradient-to-br from-blue-100 to-blue-200 rounded-md shadow flex items-center justify-center">
+        <div className="w-20 h-20 bg-blue-300 rounded-full flex items-center justify-center text-blue-700 font-bold text-2xl">
+          SK
+        </div>
+      </div>
+      <span className="text-sm font-semibold text-gray-800 mt-2">
         Suresh Kumar
       </span>
     </div>
