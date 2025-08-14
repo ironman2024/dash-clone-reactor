@@ -1,5 +1,4 @@
 import React from 'react';
-import { DashboardSidebar } from './DashboardSidebar';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -7,9 +6,8 @@ interface DashboardLayoutProps {
 
 export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
-    <div className="flex min-h-screen bg-dashboard-content">
-      <DashboardSidebar />
-      <main className="flex-1 ml-64">
+    <div className="flex min-h-screen bg-dashboard-content justify-center items-center">
+      <main className="flex-1 max-w-full">
         {children}
       </main>
     </div>

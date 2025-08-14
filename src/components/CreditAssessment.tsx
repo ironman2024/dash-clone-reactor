@@ -147,7 +147,7 @@ const CreditAssessment = () => {
         <div className="flex justify-between items-start mb-6">
           <h1 className="text-2xl font-semibold text-gray-800">Credit Assessment</h1>
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-2 px-3 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-50">
+            <button className="flex items-center gap-2 px-3 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-50">
               <Printer className="w-4 h-4" />
             </button>
           </div>
@@ -162,7 +162,7 @@ const CreditAssessment = () => {
     </h2>
     <button
       onClick={() => handleEdit('basic')}
-      className="flex items-center gap-2 px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm hover:bg-purple-50"
+      className="flex items-center gap-2 px-3 py-1 border border-blue-500 text-blue-500 rounded text-sm hover:bg-blue-50"
     >
       Edit
       <Edit className="w-3 h-3" />
@@ -172,7 +172,7 @@ const CreditAssessment = () => {
   {/* Content Row */}
   <div className="flex justify-between items-start p-4">
     {/* Left: Details Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 text-sm">
+    <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-7 gap-4 text-sm">
       <div>
         <span className="text-gray-600">Loan Application Number:</span>
         <div className="font-semibold text-gray-800">BLT00000022</div>
@@ -225,14 +225,14 @@ const CreditAssessment = () => {
             <h2 className="text-sm font-semibold text-blue-600">2. Applicant Details</h2>
             <button 
               onClick={() => handleEdit('details')}
-              className="flex items-center gap-2 px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm hover:bg-purple-50"
+              className="flex items-center gap-2 px-3 py-1 border border-blue-500 text-blue-500 rounded text-sm hover:bg-blue-50"
             >
               Edit
               <Edit className="w-3 h-3" />
             </button>
           </div>
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">User Id</label>
                 <div className="input-field">
@@ -323,7 +323,7 @@ const CreditAssessment = () => {
             <h2 className="text-sm font-semibold text-gray-600">Applicant Current Address</h2>
           </div>
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Current Address</label>
                 <div className="input-field">
@@ -386,7 +386,7 @@ const CreditAssessment = () => {
             <h2 className="text-sm font-semibold text-gray-600">Applicant Permanent Address</h2>
           </div>
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Current Address</label>
                 <div className="input-field">
@@ -452,7 +452,7 @@ const CreditAssessment = () => {
             <h2 className="text-lg font-semibold text-indigo-600">3. Applicant Financial Sections</h2>
             <button 
               onClick={() => handleEdit('basic')}
-              className="flex items-center gap-2 px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm hover:bg-purple-50"
+              className="flex items-center gap-2 px-3 py-1 border border-blue-500 text-blue-500 rounded text-sm hover:bg-blue-50"
             >
               Edit
               <Edit className="w-3 h-3" />
@@ -460,11 +460,11 @@ const CreditAssessment = () => {
           </div>
           
           <div className="px-4 py-3 border-b border-gray-200">
-            <h3 className="text-sm font-semibold text-purple-600">Income Type: Salaried Details</h3>
+            <h3 className="text-sm font-semibold text-blue-600">Income Type: Salaried Details</h3>
           </div>
           
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Employer Name</label>
                 <div className="input-field">
@@ -594,7 +594,7 @@ const CreditAssessment = () => {
             <h3 className="text-sm font-semibold text-gray-600">Applicant Close Relationship Reference Details #1</h3>
           </div>
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Name</label>
                 <div className="input-field">
@@ -639,7 +639,7 @@ const CreditAssessment = () => {
             <h3 className="text-sm font-semibold text-gray-600">Applicant Professional Reference Details #1</h3>
           </div>
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Name</label>
                 <div className="input-field">
@@ -693,10 +693,10 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 text-sm">
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
                     View
                   </button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                     Download
                   </button>
                 </div>
@@ -710,10 +710,10 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 text-sm">
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
                     View
                   </button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                     Download
                   </button>
                 </div>
@@ -745,7 +745,7 @@ const CreditAssessment = () => {
           <div className="p-4 space-y-6">
             {/* Record 1 */}
             <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group">
                   <label className="input-label">Date of Account Opened</label>
                   <div className="input-field">
@@ -789,7 +789,7 @@ const CreditAssessment = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group flex-1">
                   <label className="input-label">Spending/Savings Patterns</label>
                   <div className="input-field">
@@ -797,10 +797,10 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 text-sm">
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
                     View
                   </button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                     Download
                   </button>
                 </div>
@@ -809,7 +809,7 @@ const CreditAssessment = () => {
             
             {/* Record 2 */}
             <div className="space-y-4 border-t pt-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group">
                   <label className="input-label">Date of Account Opened</label>
                   <div className="input-field">
@@ -853,7 +853,7 @@ const CreditAssessment = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group flex-1">
                   <label className="input-label">Spending/Savings Patterns</label>
                   <div className="input-field">
@@ -861,10 +861,10 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 text-sm">
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
                     View
                   </button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                     Download
                   </button>
                 </div>
@@ -873,7 +873,7 @@ const CreditAssessment = () => {
             
             {/* Record 3 */}
             <div className="space-y-4 border-t pt-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group">
                   <label className="input-label">Date of Account Opened</label>
                   <div className="input-field">
@@ -917,7 +917,7 @@ const CreditAssessment = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4">
                 <div className="input-group flex-1">
                   <label className="input-label">Spending/Savings Patterns</label>
                   <div className="input-field">
@@ -925,10 +925,10 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 text-sm">
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
                     View
                   </button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                     Download
                   </button>
                 </div>
@@ -938,11 +938,11 @@ const CreditAssessment = () => {
           
           {/* Applicant Non-Financial Parameters */}
           <div className="px-4 py-3 border-b border-gray-200">
-            <h2 className="text-lg font-bold text-gray-700">Applicant Non-Financial Parameters</h2>
+            <h3 className="text-sm font-semibold text-gray-600">Applicant Non-Financial Parameters</h3>
           </div>
           
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Job Stability</label>
                 <div className="input-field">
@@ -963,14 +963,105 @@ const CreditAssessment = () => {
               </div>
             </div>
           </div>
-          
-          {/* Income Type: Business */}
+
           <div className="px-4 py-3 border-b border-gray-200">
-            <h3 className="text-sm font-semibold text-purple-600">Income Type: Business</h3>
+            <h3 className="text-sm font-semibold text-gray-600">Application Close Relationship Reference Details #1</h3>
           </div>
           
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+              <div className="input-group">
+                <label className="input-label">Name</label>
+                <div className="input-field">
+                  <input type="text" value="Suresh K" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Address</label>
+                <div className="input-field">
+                  <input type="text" value="No.8, Grand , Bengaluru, 560032" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Contact Number</label>
+                <div className="input-field">
+                  <input type="text" value="987546489756" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Relationship</label>
+                <div className="input-field">
+                  <input type="text" value="Father" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Occupation</label>
+                <div className="input-field">
+                  <input type="text" value="Freelance+Rental Income" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Office Name</label>
+                <div className="input-field">
+                  <input type="text" value="Xyz" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-4 py-3 border-b border-gray-200">
+            <h3 className="text-sm font-semibold text-gray-600">Application Professional Reference Details #1</h3>
+          </div>
+          
+          <div className="p-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+            <div className="input-group">
+                <label className="input-label">Name</label>
+                <div className="input-field">
+                  <input type="text" value="Suresh K" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Address</label>
+                <div className="input-field">
+                  <input type="text" value="No.8, Grand , Bengaluru, 560032" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Contact Number</label>
+                <div className="input-field">
+                  <input type="text" value="987546489756" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Relationship</label>
+                <div className="input-field">
+                  <input type="text" value="Friend" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Occupation</label>
+                <div className="input-field">
+                  <input type="text" value="Freelance+Rental Income" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+              <div className="input-group">
+                <label className="input-label">Office Name</label>
+                <div className="input-field">
+                  <input type="text" value="Xyz" readOnly className="bg-gray-50" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Income Type: Business */}
+          <div className="px-4 py-3 border-b border-gray-200">
+            <h3 className="text-sm font-semibold text-blue-600">Income Type: Business</h3>
+          </div>
+          
+          <div className="p-4">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
               <div className="input-group">
                 <label className="input-label">Business Type</label>
                 <div className="input-field">
@@ -1197,10 +1288,10 @@ const CreditAssessment = () => {
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
-                    <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">
+                    <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
                       View
                     </button>
-                    <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+                    <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                       Download
                     </button>
                   </div>
@@ -1226,10 +1317,10 @@ const CreditAssessment = () => {
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
-                    <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">
+                    <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
                       View
                     </button>
-                    <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+                    <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                       Download
                     </button>
                   </div>
@@ -1272,10 +1363,10 @@ const CreditAssessment = () => {
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
-                    <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">
+                    <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
                       View
                     </button>
-                    <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+                    <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                       Download
                     </button>
                   </div>
@@ -1309,10 +1400,10 @@ const CreditAssessment = () => {
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
-                    <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">
+                    <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
                       View
                     </button>
-                    <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+                    <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                       Download
                     </button>
                   </div>
@@ -1338,7 +1429,7 @@ const CreditAssessment = () => {
                   <h3 className="text-base font-semibold text-gray-700 mb-4">Month: {month.date}</h3>
                   
                   {/* Row 1 */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-4">
+                  <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4 mb-4">
                     <div className="input-group">
                       <label className="input-label text-sm">Date of Account Pull</label>
                       <div className="input-field">
@@ -1378,47 +1469,62 @@ const CreditAssessment = () => {
                   </div>
                   
                   {/* Row 2 */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
-                    <div className="input-group">
-                      <label className="input-label text-sm">Cheque Bounce Number</label>
-                      <div className="input-field">
-                        <input type="text" value="5" className="text-sm" />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label className="input-label text-sm">EMI Payments Ontime</label>
-                      <div className="input-field">
-                        <input type="text" value="15000" className="text-sm" />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label className="input-label text-sm">EMI Payments Overdues</label>
-                      <div className="input-field">
-                        <input type="text" value="2000" className="text-sm" />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label className="input-label text-sm">Large Transactions</label>
-                      <div className="input-field">
-                        <input type="text" value="56498" className="text-sm" />
-                      </div>
-                    </div>
-                    <div className="input-group">
-                      <label className="input-label text-sm">Spending Pattern</label>
-                      <div className="input-field">
-                        <input type="text" value="Mutual Fund" className="text-sm" />
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 text-sm">
-                      View
-                    </button>
-                    <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
-                      Download
-                    </button>
-                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7 gap-4 mb-4">
+  <div className="input-group">
+    <label className="input-label text-sm">Cheque Bounce Number</label>
+    <div className="input-field">
+      <input type="text" value="5" className="text-sm" />
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm">EMI Payments Ontime</label>
+    <div className="input-field">
+      <input type="text" value="15000" className="text-sm" />
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm">EMI Payments Overdues</label>
+    <div className="input-field">
+      <input type="text" value="2000" className="text-sm" />
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm">Large Transactions</label>
+    <div className="input-field">
+      <input type="text" value="56498" className="text-sm" />
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm">Spending Pattern</label>
+    <div className="input-field">
+      <input type="text" value="Mutual Fund" className="text-sm" />
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm invisible">View</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white hover:bg-gray-50">
+        View
+      </button>
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm invisible">Download</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700">
+        Download
+      </button>
+    </div>
+  </div>
+</div>
+
+                
                 </div>
               ))}
             </div>
@@ -1561,7 +1667,7 @@ const CreditAssessment = () => {
             <h2 className="text-lg font-bold text-blue-600">4. Applicant KYC Documents</h2>
             <button 
               onClick={() => handleEdit('kyc')}
-              className="px-3 py-1 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 flex items-center gap-2"
+              className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 flex items-center gap-2"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -1677,136 +1783,147 @@ const CreditAssessment = () => {
           </div>
           
           <div className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* CIBIL */}
-              <div className="border border-gray-200 rounded-lg p-4">
-                <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="input-group">
-                    <label className="input-label">Credit Bureau</label>
-                    <div className="input-field">
-                      <input type="text" value="CIBIL" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Credit Score</label>
-                    <div className="input-field">
-                      <input type="text" value="765" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">All Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="455" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Timely Pay Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="430" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Overdue Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="25" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Total Loan Amount</label>
-                    <div className="input-field">
-                      <input type="text" value="₹25,24,500" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Overdue Amount</label>
-                    <div className="input-field">
-                      <input type="text" value="₹1,25,910" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Age of Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="5 Years" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group col-span-2">
-                    <label className="input-label">Enquiries</label>
-                    <div className="input-field">
-                      <input type="text" value="2" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
-                </div>
-              </div>
-              
-              {/* EQUIFAX */}
-              <div className="border border-gray-200 rounded-lg p-4">
-                <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="input-group">
-                    <label className="input-label">Credit Bureau</label>
-                    <div className="input-field">
-                      <input type="text" value="EQUIFAX" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Credit Score</label>
-                    <div className="input-field">
-                      <input type="text" value="745" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">All Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="495" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Timely Pay Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="465" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Overdue Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="30" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Total Loan Amount</label>
-                    <div className="input-field">
-                      <input type="text" value="₹27,24,500" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Overdue Amount</label>
-                    <div className="input-field">
-                      <input type="text" value="₹2,25,910" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group">
-                    <label className="input-label">Age of Accounts</label>
-                    <div className="input-field">
-                      <input type="text" value="6 Years" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                  <div className="input-group col-span-2">
-                    <label className="input-label">Enquiries</label>
-                    <div className="input-field">
-                      <input type="text" value="10" readOnly className="bg-gray-50" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
-                </div>
-              </div>
-            </div>
+  <div className="space-y-6">
+    
+    {/* CIBIL */}
+    <div className="border border-gray-200 rounded-lg p-4">
+      <div className="grid grid-cols-1 md:grid-cols-11 gap-4 mb-4">
+        <div className="input-group">
+          <label className="input-label">Credit Bureau</label>
+          <div className="input-field">
+            <input type="text" value="CIBIL" readOnly className="bg-gray-50" />
           </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Credit Score</label>
+          <div className="input-field">
+            <input type="text" value="765" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">All Accounts</label>
+          <div className="input-field">
+            <input type="text" value="455" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Timely Pay Accounts</label>
+          <div className="input-field">
+            <input type="text" value="430" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Overdue Accounts</label>
+          <div className="input-field">
+            <input type="text" value="25" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Total Loan Amount</label>
+          <div className="input-field">
+            <input type="text" value="₹25,24,500" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Overdue Amount</label>
+          <div className="input-field">
+            <input type="text" value="₹1,25,910" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Age of Accounts</label>
+          <div className="input-field">
+            <input type="text" value="5 Years" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group md:col-span-2">
+          <label className="input-label">Enquiries</label>
+          <div className="input-field">
+            <input type="text" value="2" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-3">
+        <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
+          View
+        </button>
+        <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Download
+        </button>
+      </div>
+    </div>
+
+    {/* EQUIFAX */}
+    <div className="border border-gray-200 rounded-lg p-4">
+      <div className="grid grid-cols-1 md:grid-cols-11 gap-4 mb-4">
+        <div className="input-group">
+          <label className="input-label">Credit Bureau</label>
+          <div className="input-field">
+            <input type="text" value="EQUIFAX" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Credit Score</label>
+          <div className="input-field">
+            <input type="text" value="745" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">All Accounts</label>
+          <div className="input-field">
+            <input type="text" value="495" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Timely Pay Accounts</label>
+          <div className="input-field">
+            <input type="text" value="465" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Overdue Accounts</label>
+          <div className="input-field">
+            <input type="text" value="30" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Total Loan Amount</label>
+          <div className="input-field">
+            <input type="text" value="₹27,24,500" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Overdue Amount</label>
+          <div className="input-field">
+            <input type="text" value="₹2,25,910" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group">
+          <label className="input-label">Age of Accounts</label>
+          <div className="input-field">
+            <input type="text" value="6 Years" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+        <div className="input-group md:col-span-2">
+          <label className="input-label">Enquiries</label>
+          <div className="input-field">
+            <input type="text" value="10" readOnly className="bg-gray-50" />
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-3">
+        <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
+          View
+        </button>
+        <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Download
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
           
           {/* Present Loan Obligations */}
           <div className="px-4 py-3 border-b border-gray-200">
@@ -1814,51 +1931,64 @@ const CreditAssessment = () => {
           </div>
           
           <div className="p-4">
-            <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                <div className="input-group">
-                  <label className="input-label">Lender Name</label>
-                  <div className="input-field">
-                    <input type="text" value="Kotak Mahindra Bank" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Loan Amount</label>
-                  <div className="input-field">
-                    <input type="text" value="₹2,00,000.00" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Tenure</label>
-                  <div className="input-field">
-                    <input type="text" value="3 Years" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Remaining Tenure</label>
-                  <div className="input-field">
-                    <input type="text" value="1.5 Years" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Outstanding</label>
-                  <div className="input-field">
-                    <input type="text" value="₹1,20,000.00" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">FOIR %</label>
-                  <div className="input-field">
-                    <input type="text" value="60%" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-3">
-                <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
-              </div>
-            </div>
-          </div>
+  <div className="border border-gray-200 rounded-lg p-4">
+    <div className="grid grid-cols-1 md:grid-cols-8 gap-4 mb-4">
+      <div className="input-group">
+        <label className="input-label">Lender Name</label>
+        <div className="input-field">
+          <input type="text" value="Kotak Mahindra Bank" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Loan Amount</label>
+        <div className="input-field">
+          <input type="text" value="₹2,00,000.00" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Tenure</label>
+        <div className="input-field">
+          <input type="text" value="3 Years" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Remaining Tenure</label>
+        <div className="input-field">
+          <input type="text" value="1.5 Years" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Outstanding</label>
+        <div className="input-field">
+          <input type="text" value="₹1,20,000.00" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">FOIR %</label>
+        <div className="input-field">
+          <input type="text" value="60%" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">&nbsp;</label>
+        <div className="input-field">
+          <button className="w-full h-[38px] border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
+            View
+          </button>
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">&nbsp;</label>
+        <div className="input-field">
+          <button className="w-full h-[38px] bg-blue-600 text-white rounded hover:bg-blue-700">
+            Download
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           
           {/* Banking Details */}
           <div className="px-4 py-3 border-b border-gray-200">
@@ -1866,45 +1996,58 @@ const CreditAssessment = () => {
           </div>
           
           <div className="p-4">
-            <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-                <div className="input-group">
-                  <label className="input-label">Bank Name</label>
-                  <div className="input-field">
-                    <input type="text" value="Kotak Mahindra Bank" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Account Holder Name</label>
-                  <div className="input-field">
-                    <input type="text" value="Suresh K" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Bank Account Number</label>
-                  <div className="input-field">
-                    <input type="text" value="15454442154542" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">IFSC Code</label>
-                  <div className="input-field">
-                    <input type="text" value="KKBK0000222" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-                <div className="input-group">
-                  <label className="input-label">Branch Name</label>
-                  <div className="input-field">
-                    <input type="text" value="City mall" readOnly className="bg-gray-50" />
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-3">
-                <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
-              </div>
-            </div>
-          </div>
+  <div className="border border-gray-200 rounded-lg p-4">
+    <div className="grid grid-cols-1 md:grid-cols-7 lg:grid-cols-7 gap-4 mb-4">
+      <div className="input-group">
+        <label className="input-label">Bank Name</label>
+        <div className="input-field">
+          <input type="text" value="Kotak Mahindra Bank" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Account Holder Name</label>
+        <div className="input-field">
+          <input type="text" value="Suresh K" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Bank Account Number</label>
+        <div className="input-field">
+          <input type="text" value="15454442154542" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">IFSC Code</label>
+        <div className="input-field">
+          <input type="text" value="KKBK0000222" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">Branch Name</label>
+        <div className="input-field">
+          <input type="text" value="City mall" readOnly className="bg-gray-50" />
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">&nbsp;</label>
+        <div className="input-field">
+          <button className="w-full h-[38px] border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">
+            View
+          </button>
+        </div>
+      </div>
+      <div className="input-group">
+        <label className="input-label">&nbsp;</label>
+        <div className="input-field">
+          <button className="w-full h-[38px] bg-blue-600 text-white rounded hover:bg-blue-700">
+            Download
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           
           {/* Additional Documents */}
           <div className="px-4 py-3 border-b border-gray-200">
@@ -1930,8 +2073,8 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">View</button>
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Download</button>
                 </div>
               </div>
               
@@ -1952,8 +2095,8 @@ const CreditAssessment = () => {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <button className="px-4 py-2 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50">View</button>
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Download</button>
+                  <button className="px-4 py-2 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50">View</button>
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Download</button>
                 </div>
               </div>
             </div>
@@ -1966,7 +2109,7 @@ const CreditAssessment = () => {
           
           <div className="p-4">
             <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
                 <div className="input-group">
                   <label className="input-label">Loan Status</label>
                   <div className="input-field">
@@ -2062,13 +2205,20 @@ const CreditAssessment = () => {
           </div>
           
           {/* Loan Provider Lenders Details */}
-          <div className="px-4 py-3 border-b border-gray-200">
+          <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
             <h2 className="text-lg font-bold text-blue-600">10. Loan Provider Lenders Details</h2>
+            <button 
+              onClick={() => handleEdit('basic')}
+              className="flex items-center gap-2 px-3 py-1 border border-blue-500 text-blue-500 rounded text-sm hover:bg-blue-50"
+            >
+              Edit
+              <Edit className="w-3 h-3" />
+            </button>
           </div>
           
           <div className="p-4">
             <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-4 mb-4">
                 <div className="input-group">
                   <label className="input-label">Bank Name</label>
                   <div className="input-field">
@@ -2108,7 +2258,7 @@ const CreditAssessment = () => {
               <div className="flex gap-2 justify-end">
                 <button 
                   onClick={() => handleEdit('lender')}
-                  className="px-3 py-1 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 flex items-center gap-1 text-sm"
+                  className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 flex items-center gap-1 text-sm"
                 >
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -2117,13 +2267,13 @@ const CreditAssessment = () => {
                 </button>
                 <button 
                   onClick={() => handleView('Lender Details')}
-                  className="px-3 py-1 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 text-sm"
+                  className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 text-sm"
                 >
                   View
                 </button>
                 <button 
                   onClick={() => handleDownload('Lender Details')}
-                  className="px-3 py-1 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm"
+                  className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
                 >
                   Download
                 </button>
@@ -2136,7 +2286,7 @@ const CreditAssessment = () => {
             <h2 className="text-lg font-bold text-blue-600">11.1 Applicant All Risk Factors Score – Salaried</h2>
             <button 
               onClick={() => handleEdit('salaried')}
-              className="px-3 py-1 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 flex items-center gap-1 text-sm"
+              className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 flex items-center gap-1 text-sm"
             >
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -2147,7 +2297,7 @@ const CreditAssessment = () => {
           
           <div className="p-4">
             <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                 <div className="input-group">
                   <label className="input-label">Personal Behavioral Status</label>
                   <div className="input-field">
@@ -2211,7 +2361,7 @@ const CreditAssessment = () => {
             <h2 className="text-lg font-bold text-blue-600">11.2 Applicant All Risk Factors Score – Business</h2>
             <button 
               onClick={() => handleEdit('business')}
-              className="px-3 py-1 border border-purple-600 text-purple-600 bg-white rounded hover:bg-purple-50 flex items-center gap-1 text-sm"
+              className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 flex items-center gap-1 text-sm"
             >
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -2222,7 +2372,7 @@ const CreditAssessment = () => {
           
           <div className="p-4">
             <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
                 <div className="input-group">
                   <label className="input-label">Personal Behavioral Status</label>
                   <div className="input-field">
@@ -2294,7 +2444,7 @@ const CreditAssessment = () => {
           
           <div className="p-4">
             <div className="border border-gray-200 rounded-lg p-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                 <div className="input-group">
                   <label className="input-label">Reason <span className="text-red-500">*</span></label>
                   <div className="input-field">
@@ -2352,7 +2502,7 @@ const CreditAssessment = () => {
               <div className="flex justify-center">
                 <button 
                   onClick={handleUpdateDecision}
-                  className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 font-semibold"
+                  className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold"
                 >
                   Update Decision
                 </button>
@@ -2360,6 +2510,86 @@ const CreditAssessment = () => {
             </div>
           </div>
           
+
+          {/* 13th section */}
+          <div className="px-4 py-3 border-b border-gray-200">
+            <h2 className="text-lg font-bold text-blue-600">13. Authorized Person Dectails (Internal Use Only)</h2>
+          </div>
+          
+          <div className="p-4">
+            <div className="border border-gray-200 rounded-lg p-4">
+              <div className="grid grid-cols-1 md:grid-cols-8 gap-4 mb-6">
+                <div className="input-group">
+                  <label className="input-label">LG Code</label>
+                  <div className="input-field">
+                    <input type="text" value="MKL2133" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">LC Code</label>
+                  <div className="input-field">
+                    <input type="text" value="NBH3457" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">Name of Authorized Approval Person</label>
+                  <div className="input-field">
+                    <input type="text" value="Prashant Kumar Yadav" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">Designation</label>
+                  <div className="input-field">
+                    <input type="text" value="Prashant Kumar Yadav" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">Employee ID</label>
+                  <div className="input-field">
+                    <input type="text" value="FNO1233" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">Loan Application Number</label>
+                  <div className="input-field">
+                    <input type="text" value="BLT00000024" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+                  <label className="input-label">Approval Date</label>
+                  <div className="input-field">
+                    <input type="text" value="2025-14-01 00:00:00" readOnly className="bg-black-50" />
+                  </div>
+                </div>
+                <div className="input-group">
+  <label className="input-label">&nbsp;</label> {/* empty label for alignment */}
+  <div className="input-field">
+    <button
+      onClick={() => handleEdit('lender')}
+      className="w-full h-[38px] border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-100 flex items-center justify-center gap-1 text-sm"
+    >
+      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5
+                 m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828
+                 l8.586-8.586z" />
+      </svg>
+      View
+    </button>
+  </div>
+</div>
+
+              </div>
+              <div className="flex justify-center">
+                <button 
+                  onClick={handleUpdateDecision}
+                  className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold"
+                >
+                  Update & Next
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -2381,7 +2611,7 @@ const CreditAssessment = () => {
               </button>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4 mb-6">
               {Object.entries(editData).map(([key, value]) => (
                 <div key={key} className="input-group">
                   <label className="input-label capitalize">
@@ -2408,7 +2638,7 @@ const CreditAssessment = () => {
               </button>
               <button 
                 onClick={handleModalSave}
-                className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Save Changes
               </button>
