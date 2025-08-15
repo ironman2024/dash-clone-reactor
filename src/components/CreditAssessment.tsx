@@ -796,14 +796,23 @@ const CreditAssessment = () => {
                     <input type="text" value="Muttual Funds" readOnly className="bg-gray-50" />
                   </div>
                 </div>
-                <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
-                    View
-                  </button>
-                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
-                    Download
-                  </button>
-                </div>
+                <div className="input-group">
+    <label className="input-label text-sm invisible">View</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white hover:bg-gray-50">
+        View
+      </button>
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm invisible">Download</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700">
+        Download
+      </button>
+    </div>
+  </div>
               </div>
             </div>
             
@@ -860,14 +869,23 @@ const CreditAssessment = () => {
                     <input type="text" value="Muttual Funds" readOnly className="bg-gray-50" />
                   </div>
                 </div>
-                <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
-                    View
-                  </button>
-                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
-                    Download
-                  </button>
-                </div>
+                <div className="input-group">
+    <label className="input-label text-sm invisible">View</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white hover:bg-gray-50">
+        View
+      </button>
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm invisible">Download</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700">
+        Download
+      </button>
+    </div>
+  </div>
               </div>
             </div>
             
@@ -924,14 +942,23 @@ const CreditAssessment = () => {
                     <input type="text" value="Muttual Funds" readOnly className="bg-gray-50" />
                   </div>
                 </div>
-                <div className="flex gap-2 mt-6">
-                  <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm">
-                    View
-                  </button>
-                  <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
-                    Download
-                  </button>
-                </div>
+                <div className="input-group">
+    <label className="input-label text-sm invisible">View</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white hover:bg-gray-50">
+        View
+      </button>
+    </div>
+  </div>
+
+  <div className="input-group">
+    <label className="input-label text-sm invisible">Download</label>
+    <div className="input-field">
+      <button className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700">
+        Download
+      </button>
+    </div>
+  </div>
               </div>
             </div>
           </div>
@@ -2256,15 +2283,7 @@ const CreditAssessment = () => {
                 </div>
               </div>
               <div className="flex gap-2 justify-end">
-                <button 
-                  onClick={() => handleEdit('lender')}
-                  className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 flex items-center gap-1 text-sm"
-                >
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                  </svg>
-                  Edit
-                </button>
+              
                 <button 
                   onClick={() => handleView('Lender Details')}
                   className="px-3 py-1 border border-blue-600 text-blue-600 bg-white rounded hover:bg-blue-50 text-sm"
