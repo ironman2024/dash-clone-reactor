@@ -170,36 +170,50 @@ const CreditAssessment = () => {
   </div>
 
   {/* Content Row */}
-  <div className="flex justify-between items-start p-4">
+  <div className="flex flex-col lg:flex-row justify-between items-start p-4 gap-4">
     {/* Left: Details Grid */}
-    <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-7 gap-4 text-sm">
-      <div>
-        <span className="text-gray-600">Loan Application Number:</span>
-        <div className="font-semibold text-gray-800">BLT00000022</div>
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 flex-1">
+      <div className="input-group">
+        <label className="input-label">Loan Application Number</label>
+        <div className="input-field">
+          <input type="text" value="BLT00000022" readOnly className="bg-gray-50" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Applicant Class:</span>
-        <div className="font-semibold text-gray-800">A</div>
+      <div className="input-group">
+        <label className="input-label">Applicant Class</label>
+        <div className="input-field">
+          <input type="text" value="A" readOnly className="bg-gray-50" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Application Status:</span>
-        <div className="font-semibold text-red-600">Rejected</div>
+      <div className="input-group">
+        <label className="input-label">Application Status</label>
+        <div className="input-field">
+          <input type="text" value="Rejected" readOnly className="bg-gray-50 text-red-600 font-semibold" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Final Decision:</span>
-        <div className="font-semibold text-gray-800">Not Eligible</div>
+      <div className="input-group">
+        <label className="input-label">Final Decision</label>
+        <div className="input-field">
+          <input type="text" value="Not Eligible" readOnly className="bg-gray-50" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Application Date:</span>
-        <div className="font-semibold text-gray-800">2025-01-14 12:45:10</div>
+      <div className="input-group">
+        <label className="input-label">Application Date</label>
+        <div className="input-field">
+          <input type="text" value="2025-01-14 12:45:10" readOnly className="bg-gray-50" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Last Updated:</span>
-        <div className="font-semibold text-gray-800">2025-01-14 11:50:00</div>
+      <div className="input-group">
+        <label className="input-label">Last Updated</label>
+        <div className="input-field">
+          <input type="text" value="2025-01-14 11:50:00" readOnly className="bg-gray-50" />
+        </div>
       </div>
-      <div>
-        <span className="text-gray-600">Case Manager:</span>
-        <div className="font-semibold text-gray-800">Rana Prakash</div>
+      <div className="input-group">
+        <label className="input-label">Case Manager</label>
+        <div className="input-field">
+          <input type="text" value="Rana Prakash" readOnly className="bg-gray-50" />
+        </div>
       </div>
     </div>
 
@@ -1311,7 +1325,7 @@ const CreditAssessment = () => {
                   <div className="input-group">
                     <label className="input-label">Document Number</label>
                     <div className="input-field">
-                      <input type="text" value="5546454" />
+                      <input type="text" value="5546454" readOnly />
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
@@ -1340,7 +1354,7 @@ const CreditAssessment = () => {
                   <div className="input-group">
                     <label className="input-label">Document Number</label>
                     <div className="input-field">
-                      <input type="text" value="5546454" />
+                      <input type="text" value="5546454" readOnly />
                     </div>
                   </div>
                   <div className="flex gap-3 mt-4">
@@ -1460,37 +1474,37 @@ const CreditAssessment = () => {
                     <div className="input-group">
                       <label className="input-label text-sm">Date of Account Pull</label>
                       <div className="input-field">
-                        <input type="text" value={month.date} className="text-sm" />
+                        <input type="text" value={month.date} className="text-sm" readOnly />
                       </div>
                     </div>
                     <div className="input-group">
                       <label className="input-label text-sm">Credit Entry</label>
                       <div className="input-field">
-                        <input type="text" value="Credit Entry" className="text-sm" />
+                        <input type="text" value="Credit Entry" className="text-sm" readOnly />
                       </div>
                     </div>
                     <div className="input-group">
                       <label className="input-label text-sm">Debit Entry</label>
                       <div className="input-field">
-                        <input type="text" value="Debit Entry" className="text-sm" />
+                        <input type="text" value="Debit Entry" className="text-sm" readOnly />
                       </div>
                     </div>
                     <div className="input-group">
                       <label className="input-label text-sm">Average Monthly Balance</label>
                       <div className="input-field">
-                        <input type="text" value="948989/-" className="text-sm" />
+                        <input type="text" value="948989/-" className="text-sm" readOnly />
                       </div>
                     </div>
                     <div className="input-group">
                       <label className="input-label text-sm">GST/Tax Credit</label>
                       <div className="input-field">
-                        <input type="text" value="Credit Entry" className="text-sm" />
+                        <input type="text" value="Credit Entry" className="text-sm" readOnly />
                       </div>
                     </div>
                     <div className="input-group">
                       <label className="input-label text-sm">GST/Tax Debit</label>
                       <div className="input-field">
-                        <input type="text" value="Debit Entry" className="text-sm" />
+                        <input type="text" value="Debit Entry" className="text-sm" readOnly />
                       </div>
                     </div>
                   </div>
@@ -1500,35 +1514,35 @@ const CreditAssessment = () => {
   <div className="input-group">
     <label className="input-label text-sm">Cheque Bounce Number</label>
     <div className="input-field">
-      <input type="text" value="5" className="text-sm" />
+      <input type="text" value="5" className="text-sm" readOnly />
     </div>
   </div>
 
   <div className="input-group">
     <label className="input-label text-sm">EMI Payments Ontime</label>
     <div className="input-field">
-      <input type="text" value="15000" className="text-sm" />
+      <input type="text" value="15000" className="text-sm" readOnly />
     </div>
   </div>
 
   <div className="input-group">
     <label className="input-label text-sm">EMI Payments Overdues</label>
     <div className="input-field">
-      <input type="text" value="2000" className="text-sm" />
+      <input type="text" value="2000" className="text-sm" readOnly />
     </div>
   </div>
 
   <div className="input-group">
     <label className="input-label text-sm">Large Transactions</label>
     <div className="input-field">
-      <input type="text" value="56498" className="text-sm" />
+      <input type="text" value="56498" className="text-sm" readOnly />
     </div>
   </div>
 
   <div className="input-group">
     <label className="input-label text-sm">Spending Pattern</label>
     <div className="input-field">
-      <input type="text" value="Mutual Fund" className="text-sm" />
+      <input type="text" value="Mutual Fund" className="text-sm" readOnly />
     </div>
   </div>
 
@@ -2541,43 +2555,43 @@ const CreditAssessment = () => {
                 <div className="input-group">
                   <label className="input-label">LG Code</label>
                   <div className="input-field">
-                    <input type="text" value="MKL2133" readOnly className="bg-black-50" />
+                    <input type="text" value="MKL2133" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">LC Code</label>
                   <div className="input-field">
-                    <input type="text" value="NBH3457" readOnly className="bg-black-50" />
+                    <input type="text" value="NBH3457" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">Name of Authorized Approval Person</label>
                   <div className="input-field">
-                    <input type="text" value="Prashant Kumar Yadav" readOnly className="bg-black-50" />
+                    <input type="text" value="Prashant Kumar Yadav" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">Designation</label>
                   <div className="input-field">
-                    <input type="text" value="Prashant Kumar Yadav" readOnly className="bg-black-50" />
+                    <input type="text" value="Manager" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">Employee ID</label>
                   <div className="input-field">
-                    <input type="text" value="FNO1233" readOnly className="bg-black-50" />
+                    <input type="text" value="FNO1233" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">Loan Application Number</label>
                   <div className="input-field">
-                    <input type="text" value="BLT00000024" readOnly className="bg-black-50" />
+                    <input type="text" value="BLT00000022" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
                   <label className="input-label">Approval Date</label>
                   <div className="input-field">
-                    <input type="text" value="2025-14-01 00:00:00" readOnly className="bg-black-50" />
+                    <input type="text" value="2025-01-14 00:00:00" readOnly className="bg-gray-50" />
                   </div>
                 </div>
                 <div className="input-group">
